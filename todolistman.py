@@ -9,13 +9,12 @@ def add_task(task):
     print(f"Task added: {task}")
 
 def list_tasks():
-    """List all tasks."""
     if not tasks:
         print("No tasks found.")
         return
     for i, task in enumerate(tasks):
         status = "✓" if task["completed"] else "✗"
-        print(f"{i + 1}. [{status}] {task['task']}")
+        print(f"{i + 1}. {task['task']} [{status}]")
 
 def mark_completed(index):
     """Mark a task as completed."""
