@@ -3,10 +3,9 @@
 
 tasks = []
 
-def add_task(task):
-    """Add a new task to the list."""
-    tasks.append({"task": task, "completed": False})
-    print(f"Task added: {task}")
+def add_task(task, due_date=None):
+    tasks.append({"task": task, "completed": False, "due_date": due_date})
+    print(f"Task added: {task} (Due: {due_date or 'No due date'})")
 
 def list_tasks():
     if not tasks:
