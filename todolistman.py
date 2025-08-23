@@ -1,4 +1,3 @@
-# Repository: python-todo-manager
 # Description: A command-line to-do list manager.
 
 tasks = []
